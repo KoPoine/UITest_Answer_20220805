@@ -4,7 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue_grey_900"
+    android:paddingHorizontal="24dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/custom_rectangle_r8"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="김집중"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="프로필 및 정보 수정"
+                android:textSize="12sp"
+                android:textColor="@color/amber_300"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_chevron_right_24"
+            app:tint="@color/white"/>
+
+    </LinearLayout>
 
 </LinearLayout>
